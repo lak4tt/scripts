@@ -21,4 +21,4 @@ _0xO = _0xO .. "if fbActive then Lighting.Ambient,Lighting.OutdoorAmbient=Color3
 _0xO = _0xO .. "if aimbot and aimKeyDown then local target=getClosestPlayer() if target and target.Character and target.Character:FindFirstChild('Head') then Camera.CFrame=Camera.CFrame:Lerp(CFrame.new(Camera.CFrame.Position,target.Character.Head.Position),aimSmoothness) end end if not espActive then for _,player in pairs(game:GetService('Players'):GetPlayers()) do if player.Character and player.Character:FindFirstChild('ESPHighlight') then player.Character.ESPHighlight:Destroy() end end end "
 _0xO = _0xO .. "if autoFarm and root then for _,item in pairs(workspace:GetDescendants()) do if item:IsA(string.char(66,97,115,101,80,97,114,116)) and (item.Name:lower():find('coin') or item.Name:lower():find('token') or item.Name:lower():find('diamond')) then root.CFrame=item.CFrame break end end end "
 _0xO = _0xO .. "end for _,pl in pairs(game:GetService('Players'):GetPlayers()) do if pl~=P and pl.Character and pl.Character:FindFirstChild('ESPHighlight') and not espActive then pl.Character.ESPHighlight:Destroy() end end end)"
-assert(loadstring(_0xF or _0xO))()
+assert(loadstring(_0xO))()
